@@ -1,26 +1,20 @@
 # Ember-headroom
 
-This README outlines the details of collaborating on this Ember addon.
+<a href="https://shipshape.io/"><img src="http://i.imgur.com/bU4ABmk.png" width="100" height="100"/></a>
 
-## Installation
+### About
 
-* `git clone` this repository
-* `npm install`
-* `bower install`
+This is a simple wrapper that shims headroom.js, for use with an Ember application.
 
-## Running
+### Installation
 
-* `ember serve`
-* Visit your app at http://localhost:4200.
+```bash
+ember install ember-headroom
+```
 
-## Running Tests
+### Usage
 
-* `npm test` (Runs `ember try:testall` to test your addon against multiple Ember versions)
-* `ember test`
-* `ember test --server`
+```js
+import Headroom from 'headroom';
+```
 
-## Building
-
-* `ember build`
-
-For more information on using ember-cli, visit [http://ember-cli.com/](http://ember-cli.com/).
