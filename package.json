@@ -1,6 +1,6 @@
 {
   "name": "ember-headroom",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Ember addon to include headroom.js as an ES2015 module in your app",
   "directories": {
     "doc": "doc",
