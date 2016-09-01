@@ -4,7 +4,7 @@
 
 ### About
 
-This is a simple wrapper that shims headroom.js, for use with an Ember application.
+An Ember addon that installs [headroom.js](https://github.com/WickyNilliams/headroom.js) in your Ember app and provides an ES2015 module shim for it.
 
 ### Installation
 
