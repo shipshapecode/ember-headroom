@@ -10,6 +10,6 @@ module.exports = {
   },
 
   afterInstall: function(options) {
-    return this.addBowerPackageToProject('headroom.js', 'https://npmcdn.com/headroom.js/bower.zip', '');
+    return this.addBowerPackageToProject('headroom.js', 'https://unpkg.com/headroom.js/bower.zip', '');
   }
 };
