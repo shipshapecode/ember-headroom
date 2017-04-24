@@ -1,30 +1,24 @@
-/* eslint-disable */
+/* eslint-env node */
 'use strict';
-
-var path = require('path');
 
 module.exports = {
   name: 'ember-headroom',
 
-  included: function(app) {
-    this._super.included(app);
-    if (process.env.EMBER_CLI_FASTBOOT !== 'true') {
-
-      // Fix for loading it in addons/engines
-      if (typeof app.import !== 'function' && app.app) {
-        app = app.app;
+  options: {
+    nodeAssets: {
+      'headroom.js': {
+        vendor: ['dist/headroom.min.js']
       }
-
-      app.import(app.bowerDirectory + '/headroom.js/dist/headroom.min.js');
-      app.import('vendor/ember-headroom/ember-headroom-shim.js', {
-        exports: {
-          headroom: ['default']
-        }
-      });
     }
   },
 
-  treeForVendor: function() {
-    return path.join(__dirname, 'client');
+  included: function() {
+    this._super.included.apply(this, arguments);
+
+    if (!process.env.EMBER_CLI_FASTBOOT) {
+      this.import('vendor/headroom.js/dist/headroom.min.js', {
+        using: [{ transformation: 'amd', as: 'headroom' }]
+      });
+    }
   }
 };
