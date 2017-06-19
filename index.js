@@ -7,7 +7,10 @@ module.exports = {
   options: {
     nodeAssets: {
       'headroom.js': {
-        vendor: ['dist/headroom.min.js']
+        vendor: ['dist/headroom.min.js'],
+        processTree(input) {
+          return fastbootTransform(input);
+        }
       }
     }
   },
