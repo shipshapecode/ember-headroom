@@ -1,6 +1,8 @@
 /* eslint-env node */
 'use strict';
 
+const fastbootTransform = require('fastboot-transform');
+
 module.exports = {
   name: 'ember-headroom',
 
@@ -18,10 +20,8 @@ module.exports = {
   included: function() {
     this._super.included.apply(this, arguments);
 
-    if (!process.env.EMBER_CLI_FASTBOOT) {
-      this.import('vendor/headroom.js/dist/headroom.min.js', {
-        using: [{ transformation: 'amd', as: 'headroom' }]
-      });
-    }
+    this.import('vendor/headroom.js/dist/headroom.min.js', {
+      using: [{ transformation: 'amd', as: 'headroom' }]
+    });
   }
 };
