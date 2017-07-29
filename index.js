@@ -19,7 +19,7 @@ module.exports = {
     }
   },
 
-  included: function() {
+  included() {
     this._super.included.apply(this, arguments);
 
     this.import('vendor/headroom.js/dist/headroom.min.js', {
