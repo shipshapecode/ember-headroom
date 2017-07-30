@@ -10,7 +10,9 @@ module.exports = {
     nodeAssets: {
       'headroom.js': {
         vendor: {
-          include: ['dist/headroom.min.js'],
+          srcDir: 'dist',
+          destDir: 'headroom',
+          include: ['headroom.js'],
           processTree(input) {
             return fastbootTransform(input);
           }
@@ -22,8 +24,13 @@ module.exports = {
   included() {
     this._super.included.apply(this, arguments);
 
-    this.import('vendor/headroom.js/dist/headroom.min.js', {
-      using: [{ transformation: 'amd', as: 'headroom' }]
+    this.import('vendor/headroom/headroom.js');
+
+    this.import('vendor/headroom/shim.js', {
+      type: 'vendor',
+      exports: {
+        headroom: ['default']
+      }
     });
   }
 };

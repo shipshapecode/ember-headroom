@@ -6,5 +6,5 @@ moduleForAcceptance('Acceptance | headroom shim');
 
 test('testing shim import', function(assert) {
   assert.ok(Headroom !== undefined && Headroom !== null);
-  assert.equal(Headroom.toString().substr(0, 42), 'function e(a, b) {b=c(b,e.options),this.la');
+  assert.equal(Headroom.toString().substr(0, 34), 'function Headroom(elem, options) {');
 });
