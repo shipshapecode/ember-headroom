@@ -8,7 +8,7 @@
 ![Download count all time](https://img.shields.io/npm/dt/ember-headroom.svg)
 [![npm](https://img.shields.io/npm/dm/ember-headroom.svg)]()
 [![Ember Observer Score](http://emberobserver.com/badges/ember-headroom.svg)](http://emberobserver.com/addons/ember-headroom)
-[![Build Status](https://travis-ci.org/shipshapecode/ember-headroom.svg)](https://travis-ci.org/shipshapecode/ember-headroom)
+[![Build Status](https://travis-ci.org/shipshapecode/ember-headroom.svg)](https://travis-ci.org/shipshapecode/ember-headroom) [![Greenkeeper badge](https://badges.greenkeeper.io/shipshapecode/ember-headroom.svg)](https://greenkeeper.io/)
 
 ### About
 
