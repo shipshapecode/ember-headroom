@@ -10,6 +10,10 @@
 [![Ember Observer Score](http://emberobserver.com/badges/ember-headroom.svg)](http://emberobserver.com/addons/ember-headroom)
 [![Build Status](https://travis-ci.org/shipshapecode/ember-headroom.svg)](https://travis-ci.org/shipshapecode/ember-headroom)
 
+## Deprecated
+
+This addon has been deprecated, since it was just a shim. You should use [ember-auto-import](https://github.com/ef4/ember-auto-import) instead.
+
 ### About
 
 An Ember addon that installs [headroom.js](https://github.com/WickyNilliams/headroom.js) in your Ember app and provides an ES2015 module shim for it.
